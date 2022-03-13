@@ -6,7 +6,8 @@ snakes = {}
 
 # This function will generate ladders position randomly
 def generate_snakes():
-    number_of_snakes = int(input("Enter number of snakes : "))
+    print()
+    number_of_snakes = int(input("ENTER NUMBER OF SNAKES : "))
 
     i = 0
     while i < number_of_snakes:
@@ -16,5 +17,5 @@ def generate_snakes():
                 snakes[snake_head] = randint(2, snake_head-6)
 
             i += 1
-    print("The Snake Head and Tile positions is: ",snakes)
+    print("THE SNAKE HEAD AND TILE POSITIONS IS: ",snakes)
 

@@ -7,7 +7,8 @@ ladders = {}
 
 # This function will generate ladders position randomly
 def generate_ladders():
-    number_of_ladders = int(input("Enter number of Ladders : "))
+    print()
+    number_of_ladders = int(input("ENTER NUMBER OF LADDERS : "))
     i = 0
     while i < number_of_ladders:
         ladder_top = randint(11, 99)
@@ -17,5 +18,5 @@ def generate_ladders():
                     if ladder_top not in snakesPositions.snakes.values():
                         ladders[randint(2, ladder_top-6)] = ladder_top
                     i += 1
-    print("The Ladder Stating and Ending Positions is: ",ladders)
+    print("THE LADDER STATING AND ENDING POSITIONS IS: ",ladders)
 
